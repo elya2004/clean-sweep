@@ -1,0 +1,122 @@
+.about-bvlt-system__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-bvlt-system__image, .about-bvlt-system__content {
+    width: calc(50% - 24px);
+}
+
+.about-bvlt-system__image {
+    flex-shrink: 0;
+}
+
+.about-bvlt-system__image img {
+    border-radius: 16px;
+}
+
+.about-bvlt-system__content p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.about-bvlt-system__content .button {
+    margin-top: 25px;
+}
+
+.about-bvlt-system-2 {
+    background: #F7F7F7;
+}
+
+.about-bvlt-system-2 .h2 {
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 800;
+    color: #0F1B24;
+}
+
+.about-bvlt-system-2 p {
+    gap: 5px;
+}
+
+@media (max-width: 1199px) {
+    .about-bvlt-system__inner > * {
+        width: calc(50% - 20px);
+    }
+
+    .about-bvlt-system__content {
+        letter-spacing: -.1px;
+    }
+
+    .about-bvlt-system-2 .about-bvlt-system__inner > * {
+        width: calc(50% - 15px);
+    }
+
+    .about-bvlt-system-2 .about-bvlt-system__content {
+        padding-right: 3px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page > *:not(.banner) {
+        padding: 50px 0;
+    }
+    .about-bvlt-system__inner > * {
+        width: calc(50% - 10px);
+    }
+    .about-bvlt-system__content {
+        letter-spacing: -.06px;
+    }
+    .about-bvlt-system-2 {
+        margin-right: 20px;
+    }
+    .about-bvlt-system-2 .about-bvlt-system__inner {
+        flex-direction: column;
+    }
+    .about-bvlt-system-2 .about-bvlt-system__inner > * {
+        width: 100%;
+    }
+    .about-bvlt-system-2 .about-bvlt-system__image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page > *:not(.banner) {
+        padding: 40px 0;
+    }
+    .about-bvlt-system__inner {
+        flex-direction: column;
+    }
+    .about-bvlt-system__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-bvlt-system__image {
+        width: 100%;
+    }
+    .about-bvlt-system .button {
+        align-self: center;
+        margin-top: 12px;
+    }
+    .about-bvlt-system-2 {
+        margin-right: 0;
+    }
+    .about-bvlt-system-2 .about-bvlt-system__content {
+        padding-right: 0;
+        margin-top: 0;
+    }
+    .about-bvlt-system-2 .h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .about-bvlt-system-2 .button {
+        position: relative;
+        margin-right: auto;
+        margin-top: 24px;
+    }
+}

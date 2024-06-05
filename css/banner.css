@@ -1,0 +1,128 @@
+.banner {
+    padding: 145px 0;
+    background: url("../img/banner/banner-desktop.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+.banner__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 68px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 16px;
+}
+
+.banner__list-text {
+    display: flex;
+    column-gap: 29px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.banner__list-text li {
+    position: relative;
+}
+
+.banner__list-text li:not(:last-child):before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner__text {
+    width: 878px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 100%;
+    margin: 15px auto 0;
+}
+
+.banner__buttons {
+    display: flex;
+    margin-top: 30px;
+    column-gap: 20px;
+}
+.banner__buttons .button:first-child {
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+@media (max-width: 1199px) {
+    .banner {
+        background-image: url("../img/banner/banner-tablet-h.jpg");
+        padding: 107px 0 108px;
+    }
+    .banner__inner {
+        padding: 50px 40px 50px;
+    }
+    .banner__list-text {
+        column-gap: 25px;
+        margin-left: 3px;
+    }
+    .banner__list-text li:not(:last-child):before {
+        left: calc(100% + 8px);
+    }
+    .banner__text {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner {
+        background-image: url("../img/banner/banner-tablet-v.jpg");
+        padding: 53px 0 51px;
+    }
+    .banner__inner {
+        padding: 51px 30px 49px;
+    }
+    .banner h1 {
+        font-size: 38px;
+        line-height: 57px;
+    }
+    .banner__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding: 27px 0 28px;
+        background-image: url(../img/banner/banner-mobile.jpg);
+    }
+    .banner__inner {
+        padding: 30px 16px;
+    }
+    .banner__list-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .banner h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .banner__text {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 10px;
+    }
+    .banner__buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
