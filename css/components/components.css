@@ -5,6 +5,60 @@
     padding: 0 20px;
 }
 
+.block-p-v {
+    padding: 80px 0;
+}
+
+.block-m-v {
+    margin: 80px 0;
+}
+
+.block-m-t {
+    margin-top: 80px;
+}
+
+@media (max-width: 1199px) {
+    .block-p-v {
+        padding: 60px 0;
+    }
+
+    .block-m-v {
+        margin: 60px 0;
+    }
+
+    .block-m-t {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .block-p-v {
+        padding: 50px 0;
+    }
+
+    .block-m-v {
+        margin: 50px 0;
+    }
+
+    .block-m-t {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .block-p-v {
+        padding: 40px 0;
+    }
+
+    .block-m-v {
+        margin: 40px 0;
+    }
+
+    .block-m-t {
+        margin-top: 40px;
+    }
+}
+
 /* Выравнивание */
 
 .text-center {
@@ -41,15 +95,6 @@
 
 /* Текст */
 
-.page-title {
-    margin-bottom: 30px;
-    font-size: 32px;
-    line-height: 48px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #0F1B24;
-}
-
 .subtitle {
     text-align: center;
     text-transform: uppercase;
@@ -60,7 +105,7 @@
     color: #0F1B24;
 }
 
-.h1, .h3 {
+.h3 {
     font-weight: 700;
 }
 
@@ -70,9 +115,12 @@
 }
 
 .h1 {
-    margin-bottom: 0;
-    font-size: 62px;
-    line-height: 73px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #0F1B24;
 }
 
 .h2 {
@@ -263,6 +311,10 @@
 
 /* Хлебные крошки */
 
+body:has(.banner) .breadcrumbs {
+    margin-top: 20px;
+}
+
 .breadcrumbs {
     display: flex;
     margin: 30px 0;
@@ -357,7 +409,7 @@
     display: flex;
     gap: 12px;
     padding-left: 36px;
-    background: url("../img/icons/check.svg") no-repeat left top;
+    background: url("../../img/icons/check.svg") no-repeat left top;
     font-weight: 700;
 }
 
@@ -365,28 +417,8 @@
     margin-bottom: 16px;
 }
 
-.blue-block {
-    margin-top: 80px;
-    padding: 40px;
-    border-radius: 16px;
-    background: #2D92D0;
-}
-
-.blue-block__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-}
-
-.blue-block__buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+.user-content .button {
+    margin-top: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -424,17 +456,11 @@
         margin: 12px 0;
     }
 
-    .blue-block {
-        margin-top: 60px;
-        padding: 30px;
-    }
-
-    .blue-block__buttons {
-        margin-top: 20px;
-    }
-
     .subtitle {
         display: none;
+    }
+    .user-content .button {
+        margin-top: 1px;
     }
 }
 
@@ -443,7 +469,7 @@
         margin: 30px 0 20px;
     }
 
-    .page-title {
+    .h1 {
         margin-bottom: 20px;
         font-size: 28px;
         line-height: 42px;
@@ -470,16 +496,12 @@
         letter-spacing: 0;
     }
 
+    .block:nth-child(3) .block__content p {
+        letter-spacing: -0.03px;
+    }
+
     .block:nth-child(3) {
         gap: 30px;
-    }
-
-    .blue-block {
-        margin-top: 50px;
-    }
-
-    .blue-block__title {
-        text-align: center;
     }
 }
 
@@ -492,7 +514,7 @@
         margin: 20px 0 20px;
     }
 
-    .page-title {
+    .h1 {
         font-size: 24px;
         line-height: 36px;
     }
@@ -508,20 +530,7 @@
     .block:nth-child(2) h2 {
         margin-bottom: 12px;
     }
-
-    .blue-block {
-        margin-top: 40px;
-        padding: 20px;
-    }
-
-    .blue-block__title {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    .blue-block__buttons {
-        align-items: center;
-        flex-direction: column;
-        gap: 12px;
+    .block:nth-child(3) .block__content p {
+        letter-spacing: -0.1px;
     }
 }

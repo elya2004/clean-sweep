@@ -26,10 +26,6 @@ a:hover {
     padding: 80px 0;
 }
 
-.page:not(.main-page) .container > *:not(:first-child):not(.blue-block) {
-    padding: 80px 0;
-}
-
 .how-bvlt-can-help-you {
     padding: 80px 0;
     background: #F7F7F7;
@@ -233,10 +229,6 @@ a:hover {
         padding: 60px 0;
     }
 
-    .page:not(.main-page) .container > *:not(:first-child):not(.blue-block) {
-        padding: 60px 0;
-    }
-
     .how-bvlt-can-help-you__list {
         margin: 0 -10px -20px;
     }
@@ -288,9 +280,6 @@ a:hover {
 }
 
 @media (max-width: 991px) {
-    .page:not(.main-page) .container > *:not(:first-child):not(.blue-block) {
-        padding: 50px 0;
-    }
     .try-bvlt-system {
         margin-right: 20px;
     }
@@ -376,9 +365,6 @@ a:hover {
     }
     .brands__item {
         width: 136px;
-    }
-    .page:not(.main-page) .container > *:not(:first-child):not(.blue-block) {
-        padding: 40px 0;
     }
 }
 

@@ -17,13 +17,14 @@
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/components/components.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/components/banner.css">
     <link rel="stylesheet" href="css/about-bvlt-system.css">
     <link rel="stylesheet" href="css/our-services.css">
+    <link rel="stylesheet" href="css/components/blue-block.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/popup.css">
     <title>Clean Sweep</title>
@@ -186,7 +187,15 @@
 
     <main class="page main-page">
 
-        <section class="banner">
+        <section class="banner banner-view-2">
+
+            <picture class="banner__bg">
+                <source srcset="img/main-page/bg-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="img/main-page/bg-tablet-h.jpg" media="(min-width: 992px)">
+                <source srcset="img/main-page/bg-tablet-v.jpg" media="(min-width: 768px)">
+                <img src="img/main-page/bg-mobile.jpg" alt="">
+            </picture>
+
             <div class="container">
                 <div class="banner__inner">
 
@@ -195,7 +204,7 @@
                         <li>long term</li>
                     </ul>
 
-                    <h1 class="h1">Eliminate your cleaning problems</h1>
+                    <h1 class="banner__title">Eliminate your cleaning problems</h1>
                     <p class="banner__text">
                         Get rid of cleaning problems forever through our BVLT System - designed for
                         frustrated, tired and busy FMs to get the best return on their cleaning budget, long term.
@@ -251,6 +260,7 @@
                         <span class="number">01</span>
                         <h3 class="h3">
                             Cleaning that’s<br>
+                            managed FOR you
                             managed FOR you
                         </h3>
                         <p>
