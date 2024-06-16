@@ -23,7 +23,7 @@ ourServicesTabs.forEach(function (tabButton) {
     });
 });
 
-if (window.innerWidth < 768) {
+if (window.innerWidth < 768 && document.querySelector('.swiper')) {
     new Swiper('.our-services .swiper', {
         slidesPerView: 'auto',
         spaceBetween: 12,

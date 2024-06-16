@@ -47,7 +47,7 @@
 }
 
 .the-bvlt-difference__item:nth-child(2) .the-bvlt-difference__list li {
-    background-image: url('../../img/main-page/check-circle.svg');
+    background-image: url('../../img/icons/check-circle-transparent.svg');
 }
 
 .the-bvlt-difference__list li:not(:last-child) {

@@ -74,20 +74,6 @@
     line-height: 24px;
 }
 
-.our-services-tab-content__item .more {
-    align-items: center;
-    margin-top: 10px;
-    color: #38B44A;
-}
-
-.our-services-tab-content__item .more:hover {
-    color: #2D92D0;
-}
-
-.our-services-tab-content__item .more svg {
-    margin-left: 10px;
-}
-
 @media (max-width: 1199px) {
     .our-services-tab-content__inner {
         margin: 0 -15px -58px;
@@ -119,9 +105,6 @@
         -webkit-line-clamp: 4;
         line-height: 24px;
 
-    }
-    .our-services-tab-content__item .more {
-        margin-top: 11px;
     }
 }
 

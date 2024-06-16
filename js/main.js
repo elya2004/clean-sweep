@@ -4,5 +4,7 @@ import './brands.js';
 import './different.js';
 import './footer.js';
 import './menu.js';
+import './faq.js';
+import './price-plans.js';
 import './popup.js';
 import './form.js';

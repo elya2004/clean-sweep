@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/components/components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pages/services.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <title>Services</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div id="mobile-menu-wrapper" class="mobile-menu__wrapper hide-desktop">
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <a href="/" class="mobile-menu__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <button id="mobile-menu-button-close" class="mobile-menu__button-close">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.52513 11.4749L30.799 33.7487L33.2739 31.2739L11 9L8.52513 11.4749Z"
+                              fill="currentColor"/>
+                        <path d="M11.4749 33.4749L9 31L31.2739 8.72614L33.7487 11.201L11.4749 33.4749Z"
+                              fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu-content" class="mobile-menu__content">
+
+            </div>
+
+            <div id="mobile-menu-footer" class="mobile-menu__footer">
+
+            </div>
+        </div>
+        <div id="mobile-menu-bg" class="mobile-menu__bg"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header__inner">
+
+                <a href="/" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <nav id="header-menu" class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <div class="header-menu__item-header">
+                                <a href="about-us.html" class="header-menu__link">About Us</a>
+                                <button class="header-menu__arrow">
+                                    <img src="img/icons/arrown-down.svg" alt="">
+                                </button>
+                            </div>
+
+                            <ul class="header-menu__submenu">
+                                <li>
+                                    <a href="#">Apartment Block Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Commercial Communal Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Medical Centre Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Office Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Commercial Deep Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Garden Maintenance</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pressure Washing</a>
+                                </li>
+                                <li>
+                                    <a href="#">After-Builders Cleaning</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__item">
+                            <div class="header-menu__item-header">
+                                <a href="services.html" class="header-menu__link">Services</a>
+                                <button class="header-menu__arrow">
+                                    <img src="img/icons/arrown-down.svg" alt="">
+                                </button>
+                            </div>
+
+                            <ul class="header-menu__submenu">
+                                <li>
+                                    <a href="#">Apartment Block Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Commercial Communal Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Medical Centre Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Office Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Commercial Deep Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Garden Maintenance</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pressure Washing</a>
+                                </li>
+                                <li>
+                                    <a href="#">After-Builders Cleaning</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__item">
+                            <div class="header-menu__item-header">
+                                <a href="/" class="header-menu__link">Price Plans</a>
+                            </div>
+                        </li>
+                        <li class="header-menu__item">
+                            <div class="header-menu__item-header">
+                                <a href="/" class="header-menu__link">Resources</a>
+                            </div>
+                        </li>
+                        <li class="header-menu__item">
+                            <div class="header-menu__item-header">
+                                <a href="/" class="header-menu__link">Careers</a>
+                            </div>
+                        </li>
+                        <li class="header-menu__item">
+                            <div class="header-menu__item-header">
+                                <a href="/" class="header-menu__link">Contact Us</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="header-contacts" class="header__contacts">
+                    <a href="tel:018115853">
+                        <img src="img/icons/phone.svg" alt="">
+                        01 811 5853
+                    </a>
+                    <a href="mailto:info@acleansweep.ie">
+                        <img src="img/icons/mail.svg" alt="">
+                        info@acleansweep.ie
+                    </a>
+                </div>
+                <button id="header-button" class="button open-popup">
+                    instant quote
+                </button>
+
+                <button id="mobile-menu-button" class="mobile-menu__button hide-desktop" aria-label="Open menu button">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.25 31.5H36.75V28H5.25V31.5ZM5.25 22.75H36.75V19.25H5.25V22.75ZM5.25 10.5V14H36.75V10.5H5.25Z"
+                              fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page page-services">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>Services</li>
+            </ul>
+
+            <h1 class="h1">Services</h1>
+
+            <ul class="block-lists block-m-b">
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>Apartment Block Cleaning</h2>
+                        <p>Looking for an apartment block (or communal area) cleaning service that actually works?</p>
+                        <p>Clean common areas – both internal and external – are an absolute must for any residential
+                            building, not just for aesthetics, but to keep tenants comfortable too. Comfortable tenants
+                            are happy tenants, and happy tenants mean a consistent income.</p>
+                        <p>At Clean Sweep, we help property managers make more money than when they work with other
+                            cleaning companies.</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">instant quote</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-1.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-1.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-1.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+                
+
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>Commercial Communal Cleaning</h2>
+                        <p>Looking for someone to help you keep your commercial communal areas looking clean and
+                            welcoming?</p>
+                        <p>Communal areas are the first thing any visitor, tenant, or potential client sees, and if
+                            they’re cluttered or unclean, it can reflect badly on YOUR business.</p>
+                        <p>At Clean Sweep, we understand how important appearances are in the modern business world.
+                            Whether you want to impress clients, investors, or your own staff, our commercial communal
+                            cleaning is designed to maintain a professional, healthy, and safe environment – giving the
+                            right impression, every single time.</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">instant quote</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-2.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-2.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-2.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>Medical Centre Cleaning</h2>
+                        <p>Looking for someone to help you to reduce the risk of contamination and the spread of
+                            dangerous viruses at your medical offices or facilities?</p>
+                        <p>Proper cleaning in medical centres is a tough task, one that requires a high level of
+                            proficiency in cleaning skill, processes, and practices as any minor negligence can have
+                            very problematic consequences – increasing the risk to your patients, staff, and your
+                            business.</p>
+                        <p>At Clean Sweep, we work with you to plan, conduct, and maintain a bespoke cleaning programme
+                            designed specifically for you and your medical office.</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">instant quote</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-3.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-3.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-3.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>Office Cleaning</h2>
+                        <p>Looking for someone to help you maintain a safe and professional workspace for your office
+                            staff or clients?</p>
+                        <p>While most of us know how to wipe down a surface or wash a mug, when it’s done right, office
+                            cleaning can actually be a major factor in reducing employee absences due to sickness.</p>
+                        <p>From knowing how to properly sanitise a bathroom, to correctly deep-cleaning your office
+                            hardware, at Clean Sweep, our reliable and consistent high-quality cleaning can make all the
+                            difference to your office space – reducing viruses, allergens, dust, and mould, and making
+                            your team healthier and more productive.</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">instant quote</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-4.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-4.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-4.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>Commercial Deep Cleaning</h2>
+                        <p>Looking for a service that goes beyond your typical cleaning?</p>
+                        <p>Since the advent of COVID-19, more and more Irish businesses now appreciate the importance
+                            commercial deep cleaning has in helping to reduce the health risk to their clients and
+                            tenants – as well as associated risks to their business.</p>
+                        <p>At Clean Sweep, we work with the most advanced cleaning products and techniques to completely
+                            disinfect and clean your commercial property with the least amount of downtime possible –
+                            meaning you can focus on getting back to work as soon as possible with complete peace of
+                            mind.</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">instant quote</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-5.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-5.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-5.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>Garden Maintenance</h2>
+                        <p>Overgrown hedges, unkempt lawns, and unhealthy plants can leave your property looking
+                            run-down – potentially also affecting how people view you or your business.</p>
+                        <p>Regular maintenance of grounds surrounding your business, commercial premises, or residential
+                            space is key in making your property look its best for clients, visitors, and
+                            passers-by.</p>
+                        <p>Whether you're looking for ongoing garden maintenance or a once-off clean, Clean Sweep</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">Book a Meeting</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-6.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-6.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-6.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>Pressure Washing</h2>
+                        <p>The most important primary goals for any residential or commercial property manager are
+                            keeping the property looking its best and keeping it fully occupied.</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">Book a Meeting</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-7.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-7.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-7.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block__content user-content">
+                        <h2>After-Builders Cleaning</h2>
+                        <p>Need a hand cleaning after construction works or a renovation?</p>
+                        <p>Whether for residential buildings, offices, or commercial properties, tackling a
+                            post-construction clean up is no simple task that just any cleaning contractor can
+                            complete.</p>
+                        <p>Usually, it requires experience in managing large projects, a team of cleaners that can
+                            operate efficiently as a unit, and industrial cleaning supplies suitable for large cleaning
+                            projects – in short, us!</p>
+                        <p>At Clean Sweep, our after-builders cleaning services are specially designed to turn your
+                            property around as quickly as possible after construction – saving you time and money, and
+                            helping you to meet your deadlines.</p>
+
+                        <div class="wrap-buttons">
+                            <button class="button">Book a Meeting</button>
+                            <a href="#" class="button button-transparent">More</a>
+                        </div>
+
+                    </div>
+                    <div class="block__img">
+                        <picture>
+                            <source srcset="img/services/desktop/image-8.png" media="(min-width: 992px)">
+                            <source srcset="img/services/tablet-vertical/image-8.png" media="(min-width: 768px)">
+                            <img src="img/services/mobile/image-8.png" alt="">
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+
+                    <h3 class="h3">
+                        About us
+                        <img class="hide-desktop" src="img/icons/chevron-down-blue.svg" alt="">
+                    </h3>
+
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="about-us.html">About company</a>
+                        </li>
+                        <li>
+                            <a href="why-we-are-different.html">Our Differences</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="h3">
+                        Services
+                        <img class="hide-desktop" src="img/icons/chevron-down-blue.svg" alt="">
+                    </h3>
+
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="#">Apartment Block Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Commercial Communal Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Office Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Medical Centre Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Garden Maintenance</a>
+                        </li>
+                        <li>
+                            <a href="#">Commercial Deep Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Large/Small-Scale After-Builders Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Pressure Washing</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="h3">
+                        More from us
+                        <img class="hide-desktop" src="img/icons/chevron-down-blue.svg" alt="">
+                    </h3>
+
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="h3">
+                        legal section
+                        <img class="hide-desktop" src="img/icons/chevron-down-blue.svg" alt="">
+                    </h3>
+
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="#">Privacy and cookie policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item footer__item-contacts">
+                    <h3 class="h3">
+                        Contact
+                        <img class="hide-desktop" src="img/icons/chevron-down-blue.svg" alt="">
+                    </h3>
+
+                    <ul class="footer__menu">
+                        <li class="address">
+                            <img src="img/icons/address.png" width="24" height="24" alt="">
+                            Citywest Business Centre, 3013 Lake Drive, Citywest, Dublin 24
+                        </li>
+                        <li>
+                            <a href="tel:018115853">
+                                <img src="img/icons/phone.png" width="20" height="20" alt="">
+                                01 811 5853
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@acleansweep.ie">
+                                <img src="img/icons/mail.png" width="20" height="20" alt="">
+                                info@acleansweep.ie
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/M4k2ABNYSIg?si=Jp-0YpKA5iLu0057" target="_blank"
+                               rel="noopener noreferrer nofollow">
+                                <img src="img/icons/youtube.png" width="20" height="20" alt="">
+                                YouTube Chanel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <a href="/" class="footer__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+
+                <div class="footer__copyright">
+                    <span>Copyright &copy; 2023.</span> Clean Sweep Services.<br>
+                    All rights reserved
+                </div>
+
+                <div class="footer__develop-company">
+                    Develop by Meta System
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup-wrap">
+
+        <div class="popup">
+            <div class="popup__inner">
+                <form id="form" class="form">
+
+                    <div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-name">Name</label>
+                            <input id="input-name" class="form__input" type="text" placeholder="Enter your name">
+
+                            <span class="form__input-error">
+                                <img src="img/icons/error.svg" alt="">
+                                <span>This field is required</span>
+                            </span>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">Email</label>
+                            <input id="input-email" class="form__input" type="text" placeholder="Enter your email">
+
+                            <span class="form__input-error">
+                                <img src="img/icons/error.svg" alt="">
+                                <span>Email field is invalid</span>
+                            </span>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="input-phone">Phone</label>
+                            <input id="input-phone" class="form__input" type="text" placeholder="Enter your phone">
+
+                            <span class="form__input-error">
+                                <img src="img/icons/error.svg" alt="">
+                                <span>The phone field is incorrect</span>
+                            </span>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="input-name">Message</label>
+                            <textarea class="form__textarea" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+
+                    <button class="button form__button">submit</button>
+
+                </form>
+            </div>
+            <button id="popup-close" class="popup__close">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.52513 11.4749L30.799 33.7487L33.2739 31.2739L11 9L8.52513 11.4749Z"
+                          fill="currentColor"/>
+                    <path d="M11.4749 33.4749L9 31L31.2739 8.72614L33.7487 11.201L11.4749 33.4749Z"
+                          fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+
+        <div id="popup-bg" class="popup__bg"></div>
+    </div>
+</div>
+
+</body>
+</html>

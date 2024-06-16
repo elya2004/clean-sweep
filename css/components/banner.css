@@ -26,7 +26,7 @@
     padding: 50px 68px;
     text-align: center;
     color: #fff;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .6);
     border-radius: 16px;
 }
 
@@ -56,8 +56,11 @@
 }
 
 .banner__title {
+    display: flex;
+    align-items: center;
+    min-height: 73px;
     font-size: 48px;
-    line-height: 73px;
+    line-height: 53px;
     font-weight: 700;
 }
 
@@ -84,11 +87,8 @@
     padding: 145px 0;
 }
 
-.banner.banner-view-2 .banner__inner {
-    background: rgba(0, 0, 0, .6);
-}
-
 .banner.banner-view-2 .banner__title {
+    min-height: auto;
     font-size: 62px;
     line-height: 73px;
 }
@@ -99,12 +99,14 @@
 
 @media (max-width: 1199px) {
     .banner {
-        padding: 128px 0 127px;
+        display: flex;
+        align-items: center;
+        min-height: 550px;
+        padding: 111px 0;
     }
 
     .banner__inner {
         padding: 50px 40px 50px;
-        background: rgba(0, 0, 0, .6);
     }
 
     .banner__list-text {
@@ -117,6 +119,7 @@
     }
 
     .banner.banner-view-2 {
+        min-height: auto;
         padding: 107px 0 108px;
     }
 
@@ -133,11 +136,16 @@
 
 @media (max-width: 991px) {
     .banner {
-        padding: 87px 0 86px;
+        min-height: 450px;
+        padding: 46px 0;
     }
 
     .banner__inner {
-        padding: 50px 30px 50px;
+        padding: 50px 30px;
+    }
+
+    .banner__title {
+        min-height: auto;
     }
 
     .banner__title, .banner.banner-view-2 .banner__title {
@@ -156,8 +164,8 @@
 }
 
 @media (max-width: 767px) {
-    .banner.banner-view-2 {
-        padding: 27px 0 28px;
+    .banner {
+        padding: 43px 0 36px;
     }
 
     .banner__inner {
@@ -169,15 +177,15 @@
         line-height: 18px;
     }
 
-    .banner.banner-view-2 .banner__title {
+    .banner__title {
         font-size: 24px;
         line-height: 36px;
     }
 
-    .banner.banner-view-2 .banner__text {
+    .banner__text {
+        margin-top: 10px;
         font-size: 14px;
         line-height: 21px;
-        margin-top: 10px;
     }
 
     .banner__buttons {
@@ -188,22 +196,18 @@
         line-height: 21px;
     }
 
-    .banner {
-        padding: 86px 0;
+    .banner.banner-view-2 {
+        padding: 27px 0 28px;
     }
 
-    .banner__inner {
-        padding: 30px 16px 30px;
-    }
-
-    .banner__title {
+    .banner.banner-view-2 .banner__title {
         font-size: 24px;
         line-height: 36px;
     }
 
-    .banner__text {
-        margin-top: 10px;
+    .banner.banner-view-2 .banner__text {
         font-size: 14px;
         line-height: 21px;
+        margin-top: 10px;
     }
 }

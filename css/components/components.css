@@ -17,6 +17,10 @@
     margin-top: 80px;
 }
 
+.block-m-b {
+    margin-bottom: 80px;
+}
+
 @media (max-width: 1199px) {
     .block-p-v {
         padding: 60px 0;
@@ -28,6 +32,9 @@
 
     .block-m-t {
         margin-top: 60px;
+    }
+    .block-m-b {
+        margin-bottom: 60px;
     }
 }
 
@@ -43,6 +50,9 @@
     .block-m-t {
         margin-top: 50px;
     }
+    .block-m-b {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -56,6 +66,9 @@
 
     .block-m-t {
         margin-top: 40px;
+    }
+    .block-m-b {
+        margin-bottom: 40px;
     }
 }
 
@@ -85,12 +98,18 @@
 }
 
 .button-transparent {
+    color: #38B44A;
     background: transparent;
     box-shadow: inset 0 0 0 3px #38B44A;
 }
 
 .button-transparent:hover {
+    color: #fff;
     background: #38B44A;
+}
+
+.button-text-white {
+    color: #fff;
 }
 
 /* Текст */
@@ -136,14 +155,31 @@
     line-height: 20px;
 }
 
-@media (max-width: 1199px) {
+.more {
+    align-items: center;
+    margin-top: 10px;
+    line-height: 22px;
+    color: #38B44A;
+}
+.more:hover {
+    color: #2D92D0;
+}
+.more svg {
+    margin-left: 10px;
+}
+
+@media (max-width: 991px) {
     .h1 {
-        font-size: 52px;
-        line-height: 64px;
+        font-size: 28px;
+        line-height: 42px;
     }
 }
 
 @media (max-width: 767px) {
+    .h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
     .h2 {
         margin-bottom: 20px;
         font-size: 20px;
@@ -312,17 +348,15 @@
 /* Хлебные крошки */
 
 body:has(.banner) .breadcrumbs {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .breadcrumbs {
-    display: flex;
-    margin: 30px 0;
-    column-gap: 30px;
-    row-gap: 20px;
+    margin: 26px 0 28px;
 }
 
 .breadcrumbs li {
+    display: inline;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
@@ -330,6 +364,7 @@ body:has(.banner) .breadcrumbs {
 
 .breadcrumbs li:not(:last-child) {
     position: relative;
+    margin-right: 26px;
 }
 
 .breadcrumbs li:not(:last-child):before {
@@ -339,8 +374,70 @@ body:has(.banner) .breadcrumbs {
     top: 50%;
     transform: translateY(-50%);
     width: 10px;
-    margin-left: 10px;
+    margin-top: 1px;
+    margin-left: 6px;
     border-bottom: 1px solid #0F1B24
+}
+
+/* Пагинация */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination__item {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50%;
+    user-select: none;
+    transition: .3s;
+}
+
+a.pagination__item:hover {
+    color: #2D92D0;
+}
+
+span.pagination__item.active,
+a.pagination__item-prev:hover,
+a.pagination__item-next:hover {
+    background: #2D92D0;
+    color: #fff;
+}
+
+.pagination__item-prev, .pagination__item-next {
+    border: 1px solid #495157;
+}
+
+a.pagination__item-prev:hover,
+a.pagination__item-next:hover {
+    border-color: #2D92D0;
+}
+
+span.pagination__item-prev,
+span.pagination__item-next {
+    opacity: .6;
+}
+
+.pagination__item-prev {
+    margin-right: 15px;
+    padding-right: 2px;
+}
+
+.pagination__item-next {
+    margin-left: 15px;
+    padding-left: 2px;
 }
 
 /* Контент юзера */
@@ -388,13 +485,6 @@ body:has(.banner) .breadcrumbs {
     line-height: 26px;
     margin-bottom: 20px;
     color: #0F1B24;
-}
-
-.user-content p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #495157;
 }
 
 .user-content p:not(:last-child) {
@@ -466,7 +556,7 @@ body:has(.banner) .breadcrumbs {
 
 @media (max-width: 991px) {
     .breadcrumbs {
-        margin: 30px 0 20px;
+        margin: 26px 0 20px;
     }
 
     .h1 {
@@ -499,19 +589,14 @@ body:has(.banner) .breadcrumbs {
     .block:nth-child(3) .block__content p {
         letter-spacing: -0.03px;
     }
-
-    .block:nth-child(3) {
-        gap: 30px;
-    }
 }
 
 @media (max-width: 767px) {
+    .breadcrumbs {
+        margin: 16px 0 20px;
+    }
     .swiper-pagination {
         margin-top: 20px;
-    }
-
-    .breadcrumbs {
-        margin: 20px 0 20px;
     }
 
     .h1 {
