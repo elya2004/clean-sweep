@@ -170,6 +170,7 @@
 
 @media (max-width: 991px) {
     .h1 {
+        margin-bottom: 20px;
         font-size: 28px;
         line-height: 42px;
     }
@@ -188,6 +189,13 @@
 }
 
 /* Цвета */
+.bg {
+    background: #F7F7F7;
+}
+
+.bg-white {
+    background: #fff;
+}
 
 .color-green {
     color: #38B44A;
@@ -440,6 +448,32 @@ span.pagination__item-next {
     padding-left: 2px;
 }
 
+/* Список контактов */
+.contacts-list {
+    font-weight: 500;
+}
+
+.contacts-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.contacts-list li:has(img) {
+    display: flex;
+}
+
+.contacts-list .address {
+    gap: 6px;
+}
+
+.contacts-list a:hover {
+    text-decoration: underline;
+}
+
+.contacts-list a:has(img) {
+    align-items: center;
+    gap: 8px;
+}
+
 /* Контент юзера */
 
 .block {
@@ -557,12 +591,6 @@ span.pagination__item-next {
 @media (max-width: 991px) {
     .breadcrumbs {
         margin: 26px 0 20px;
-    }
-
-    .h1 {
-        margin-bottom: 20px;
-        font-size: 28px;
-        line-height: 42px;
     }
 
     .block {

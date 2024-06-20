@@ -67,6 +67,7 @@
 .table__row-header > *:not(:first-child) {
     padding: 30px 8px;
     font-weight: 800;
+    line-height: 24px;
     text-transform: uppercase;
 }
 
@@ -166,15 +167,18 @@
         display: none;
     }
 }
+
 @media (max-width: 1199px) {
     .page-price-plans {
         background: #fff;
     }
+
     .table {
         box-shadow: none;
         border-radius: 0;
         background: transparent;
     }
+
     .table__row {
         flex-wrap: wrap;
     }
@@ -195,12 +199,15 @@
         padding: 0 20px 20px;
         text-align: center;
     }
+
     .table__row-header > *:first-child p {
         width: auto;
     }
+
     .table__row-header > *:not(:first-child) {
-        padding: 28.5px 8px;
+        padding: 30.5px 8px;
     }
+
     .table__row:not(.table__row-header) > *:first-child {
         justify-content: center;
     }
@@ -212,16 +219,20 @@
         padding-left: 0;
         padding-right: 0;
     }
+
     .table__section-title svg {
         transition: .3s;
     }
+
     .table__section-title.active,
     .table__section-title.active svg {
         color: #2D92D0;
     }
+
     .table__section-title.active svg {
         transform: rotate(90deg);
     }
+
     .table__section-title.active + .table__section {
         display: block;
     }
@@ -229,10 +240,41 @@
     .table__row:not(.table__row-header) > *:first-child {
         padding: 20px 10px 17px;
     }
+
     .table__row:not(.table__row-header) > *:not(:first-child) {
         padding: 0 10px 20px;
     }
+
     .table__section {
         display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .table__row-header > *:not(:first-child) .button {
+        margin-top: 6px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 183px;
+        max-width: 100%;
+    }
+
+    .table__section-title {
+        padding: 20px 0 17px;
+    }
+    .table__row:not(.table__row-header) > *:first-child {
+        padding: 21px 16px 16px;
+    }
+    .table__row:not(.table__row-header) > *:not(:first-child) {
+        padding: 0 10px 18px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 767px) {
+    .table__row-header > *:not(:first-child) {
+        font-size: 12px;
+        line-height: 16px;
     }
 }

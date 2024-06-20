@@ -20,14 +20,6 @@
     margin-bottom: 15px;
 }
 
-.footer__menu li:has(img) {
-    display: flex;
-}
-
-.footer__item-contacts {
-    font-weight: 500;
-}
-
 .footer__item-contacts .address {
     gap: 6px;
 }

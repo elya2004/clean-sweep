@@ -1,0 +1,77 @@
+.page-404__inner {
+    display: flex;
+    padding: 150px 15px 150px 0;
+    align-items: center;
+}
+
+.page-404__content {
+    flex-grow: 1;
+}
+
+.page-404__content .h1 {
+    margin-bottom: 20px;
+}
+
+.page-404__content .buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.page-404__content .button {
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (max-width: 1199px) {
+    .page-404__inner {
+      padding: 100px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-404__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0;
+    }
+    .page-404__content {
+        text-align: center;
+    }
+    .page-404__inner picture {
+        order: -1;
+        margin-bottom: 60px;
+    }
+    .page-404__inner .h1 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .page-404__content .buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-404__inner {
+        padding: 78px 0 50px 0;
+    }
+    .page-404__inner picture {
+        margin-bottom: 40px;
+    }
+    .page-404__inner .h1 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+    .page-404__content .buttons {
+        margin-top: 25px;
+        gap: 16px;
+    }
+    .page-404__content .button {
+        width: 152px;
+    }
+}

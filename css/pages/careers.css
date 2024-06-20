@@ -1,0 +1,114 @@
+.page-careers .faq {
+    width: 906px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.page-careers .faq__content {
+    padding-bottom: 7px;
+}
+
+.page-careers .faq__content img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 6px;
+}
+
+.page-careers .faq__content p:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.page-careers .faq__content .button {
+    margin-top: 7px;
+}
+
+.careers__form-contacts-wrap .h2 {
+    width: 589px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.careers__form-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.careers__form-contacts > * {
+    width: calc(50% - 15px);
+}
+
+.careers__form {
+    padding: 40px 50px 38.5px;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 8px 16px -6px #18274B14, 0px 6px 8px -6px #18274B1F;
+    border-radius: 16px;
+}
+
+.careers__form .form__button {
+    width: auto;
+    margin-top: 30px;
+}
+
+.careers__contacts .contacts-list {
+    margin-top: 30px;
+}
+
+@media (max-width: 1199px) {
+    .careers__form {
+        padding: 30px 29px;
+    }
+
+    .careers__form-contacts {
+        align-items: flex-start;
+    }
+
+    .careers__contacts .contacts-list {
+        margin-top: 25px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-careers .faq__content {
+        padding-bottom: 0;
+    }
+
+    .careers__form-contacts > * {
+        width: calc(50% - 10px);
+    }
+
+    .careers__form {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .careers__contacts .contacts-list {
+        margin-top: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-careers .faq__content img {
+        float: none;
+        width: 100%;
+    }
+
+    .page-careers .faq__content p:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .careers__form-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .careers__form-contacts > *  {
+        width: 100%;
+    }
+}
+
+
